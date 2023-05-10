@@ -45,13 +45,21 @@ font-size: 22px;
 font-weight: 600;
 position: relative;
 }
-nav a.active:before{
+nav a:before{
 position: absolute;
 content:"";
 width: 35%;
 height: 1px;
-border-bottom: 2px solid black;
+border-bottom: 2px solid transparent;
 bottom: -3px;
+transition: all .3s ease-out;
+}
+nav a.active:before{
+border-color: black;
+}
+nav a:hover::before{
+    width: 100%;
+    border-color: black;;
 }
 main{
     display: flex;
