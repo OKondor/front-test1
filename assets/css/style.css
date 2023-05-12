@@ -45,6 +45,7 @@ nav a{
     font-weight: 600;
     position: relative;
 }
+<<<<<<< HEAD
 nav a::before{
     position: absolute;
     content: "";
@@ -61,6 +62,23 @@ nav a.active:before{
     height: 1px;
     border-bottom: 2px solid black ;
     bottom: -3px;
+=======
+nav a:before{
+position: absolute;
+content:"";
+width: 35%;
+height: 1px;
+border-bottom: 2px solid transparent;
+bottom: -3px;
+transition: all .3s ease-out;
+}
+nav a.active:before{
+border-color: black;
+}
+nav a:hover::before{
+    width: 100%;
+    border-color: black;;
+>>>>>>> 78cf0978588b1fa1f4219f74fa91cf04047819de
 }
 main{
     display: flex;
