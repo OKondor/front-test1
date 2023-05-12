@@ -151,6 +151,7 @@ h1 {
 
 .secondary-cta svg {
     width: 30px;
+    transition: all .3s ease-out;
 }
 
 .news {
@@ -180,8 +181,9 @@ h1 {
     padding: .4em;
     display: flex;
     align-items: end;
-    background-size: 150%;
+    background-size: 100%;
     transition: all .3s ease-out;
+    background-position: center center;
 }
 
 .card1 {
@@ -239,7 +241,7 @@ nav ul li a:hover:before {
 }
 
 .card:hover {
-    background-size: 160%;
+    background-size: 120%;
     transition: all 0.3s ease-out;
 }
 
